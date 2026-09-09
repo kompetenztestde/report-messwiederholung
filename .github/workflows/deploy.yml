@@ -24,6 +24,7 @@ jobs:
     env:
       BASE: '/report-messwiederholung/'
       OUT_DIR: './dist'
+      VITE_STATIC_BUILD: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
