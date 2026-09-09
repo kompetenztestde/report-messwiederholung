@@ -13,7 +13,7 @@ console.log("XXX", __dirname);
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "",
+  base: process.env.BASE ?? "",
 
   build: { // new
 
