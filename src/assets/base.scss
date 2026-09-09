@@ -1,0 +1,172 @@
+@import "../quasar-variables.sass";
+
+
+@font-face {
+  font-family: 'IQBPrimar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@/assets/fonts/IQBprimar-Regular.ttf') format('truetype');
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: $secondary;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 5rem;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: IQBPrimar, Roboto, serif;
+  font-size: 13px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-lighter;
+  color: black;
+}
+
+.q-tabs__content {
+  .q-tab.shadowed {
+    margin-bottom: 0.25rem;
+
+    &[aria-selected="true"] {
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+    }
+  }
+  .q-tab.light-bg{
+    &[aria-selected=false] {
+      background-color: $primary-light;
+
+      .q-tab__label {
+        color: #1D1D1D;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: opacity $hover-transition-duration;
+  border-radius: 5px;
+
+  &.not-rounded {
+    border-radius: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.q-dialog__inner--minimized {
+  padding: 0.25rem!important;
+}
+
+.bordered {
+  border: 2px solid $primary;
+  border-radius: 1rem;
+}
+
+.text-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+a.styled {
+  text-decoration: none;
+  font-weight: bold;
+  color: $primary;
+  border: 2px $primary solid;
+  border-radius: 3px;
+  padding: 0.25rem;
+  line-height: 1rem;
+  text-align: center;
+  &:hover {
+    font-size: 110%;
+    line-height: 1rem;
+    background-color: $background;
+  }
+}
+
+
