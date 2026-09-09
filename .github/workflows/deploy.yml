@@ -23,7 +23,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     env:
       BASE: '/report-messwiederholung/'
-      BUILD_DIR: './dist'
+      OUT_DIR: './dist'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
