@@ -1,6 +1,4 @@
-# Rückmeldung für Messwiederholungen
-
-[![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-yellow.svg)](LICENSE)
+# TBA3 Rückmeldung für Messwiederholungen
 
 Developed by netzkolchose.de UG (haftungsbeschränkt)
 
@@ -8,19 +6,26 @@ This is the prototype of a website showing the results of student evaluations of
 One or more test results can be displayed in one informative graphical screen and  
 learning material that matches the individual performances can be assigned to the students.
 
-## Accessibility
+* [Technische Dokumentation](#technische-dokumentation)
+* [Inhaltliche Dokumentation](#inhaltliche-dokumentation)
+
+---
+
+## Technische Dokumentation
+
+### Accessibility
 
 Because of its graphical nature, the results view is not made accessible. Also most accessibility features are not
 implemented in this prototype.
 
-## Local development
+### Local development
 
 The server is implemented with the [Django](https://www.djangoproject.com/) library. It merely serves static files
 and stores test results in the database. 
 
 The frontend is implemented in TypeScript using the [Vue](https://vuejs.org/) library in Composition mode.
 
-### Run frontend
+#### Run frontend
 
 Install node packages
 
@@ -40,7 +45,7 @@ Type-Check, Compile and Minify for Production
 npm run build
 ```
 
-### Run backend
+#### Run backend
 
 ```shell
 cd backend
@@ -55,7 +60,7 @@ poetry install
 Then visit http://localhost:8000 - the website is served there locally
 
 
-## Importing "internal" data
+### Importing "internal" data
 
 Data in the "internal format" can be imported to the database via:
 
@@ -80,7 +85,7 @@ Data can be deleted via
 ./manage.py tba_import_internal_data delete [name or code]
 ```
 
-## Importing TBA3 data
+### Importing TBA3 data
 
 The converter from TBA3 to "internal format" is in [api/conversion.py](backend/api/conversion.py).
 
@@ -107,21 +112,21 @@ You can get the TBA3 demo data to test conversion with:
 curl https://apps.indibit.eu/tba3-api/groups/3b-deutsch/items?type=students > students-data.json
 ```
 
-## Technologies and libraries
+### Technologies and libraries
 
-### Frontend
+#### Frontend
 
 -   [Vue 3](https://vuejs.org/) – JS-Framework, Composition-API
 -   [Vite](https://vitejs.dev/) – Dev-Build-Tool
 -   [Quasar](https://quasar.dev/) – VueJs framework
 
-### Backend
+#### Backend
 
 -   [Django](https://www.djangoproject.com/) – Django (Python) web framework
 
 ---
 
-## Project structure
+### Project structure
 
 ```
 .
@@ -142,8 +147,16 @@ curl https://apps.indibit.eu/tba3-api/groups/3b-deutsch/items?type=students > st
 └── package.json                # npm frontend package list
 ```
 
-## External assets
+### External assets
 
 The application uses external assets, such as PDF files, videos and audio files, that are not part of the repository.
 The assets are hosted under the base URL <https://files.ktest.de/tba3/>. To serve the assets from another server, the
 environment variable `VITE_ASSET_BASEURL` can be set to the base URL of the server hosting the assets during build time.
+
+---
+
+## Inhaltliche Dokumentation
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
