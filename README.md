@@ -1,5 +1,7 @@
 # TBA3 Rückmeldung für Messwiederholungen
 
+[![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-yellow.svg)](LICENSE)
+
 Developed by netzkolchose.de UG (haftungsbeschränkt)
 
 This is the prototype of a website showing the results of student evaluations of reading abilities and their development over 3 tests in 2nd and 3rd grade.
