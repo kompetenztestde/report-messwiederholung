@@ -159,6 +159,61 @@ environment variable `VITE_ASSET_BASEURL` can be set to the base URL of the serv
 
 ## Inhaltliche Dokumentation
 
+### Konzeption und Zielsetzung der digitalen Rückmeldung
+
+Die App Lesetest BKT ist ein webbasiertes Prototyping-Instrument zur digitalen Aufbereitung und Rückmeldung von Ergebnissen aus Lernstandserhebungen, bei denen die Kompetenzen von Schüler:innen zu drei unterschiedlichen Messzeitpunkten erfasst werden. Im Zentrum der Anwendung steht die längsschnittliche Betrachtung von Lernständen. Anders als bei einer einmaligen Ergebnisrückmeldung, die den Leistungsstand zu einem bestimmten Zeitpunkt abbildet, ermöglicht die Berücksichtigung von drei Messzeitpunkten eine differenzierte Perspektive auf individuelle und gruppenbezogene Entwicklungsverläufe. Die erhobenen Daten werden so aufbereitet, dass Veränderungen über die Zeit sichtbar und für pädagogische Reflexions- und Entscheidungsprozesse nutzbar werden.
+
+### Aufbau und Struktur der Anwendung
+
+Die Anwendung dient dazu, die Ergebnisse der drei Messzeitpunkte in einer digital zugänglichen und strukturierten Form zusammenzuführen. Die grundlegende Informationsarchitektur orientiert sich dabei an der zeitlichen Abfolge der Erhebungen und der Möglichkeit, die Ergebnisse der einzelnen Messzeitpunkte miteinander in Beziehung zu setzen. Dadurch wird die Betrachtung des Lernstands um eine dynamische Perspektive erweitert: Neben dem jeweils erreichten Ergebnis wird auch die Entwicklung zwischen den Erhebungen relevant.
+
+Die digitale Aufbereitung verfolgt das Ziel, die erhobenen Daten nicht lediglich tabellarisch wiederzugeben, sondern sie in eine verständliche und interpretierbare Form zu überführen. Eine solche Rückmeldung unterstützt die Nutzer:innen dabei, zentrale Informationen schnell zu erfassen und Zusammenhänge zwischen den Messzeitpunkten zu erkennen. Die Schüler:innen werden als Vögel dargestellt. Die Anzeigemöglichkeiten umfassen die Verwendung von Schüler:innencodes sowie eine Klarnamenfunktion. Die jeweiligen Vogelgruppen repräsentieren die unterschiedlichen Messzeitpunkte. Die Lernentwicklung der Kinder wird anhand der Flughöhe visualisiert. Fliegt ein Vogel hoch am Himmel, deutet dies auf ein sehr gutes Testergebnis hin. Fliegt ein Vogel niedrig, kann dies auf einen möglichen Förderbedarf hinweisen. Die Funktion „Besonderheiten hervorheben“ dient als Interpretationshilfe (z.B. die Hervorhebung von stagnierenden Werten). 
+
+Auf Grundlage der Testergebnisse werden die Schüler:innen verschiedenen Lerngruppen zugeordnet: Textadler, Wortfink und Silbenmöwe. Durch einen Klick auf eine dieser Lerngruppen öffnet sich ein Pool mit Fördermaterialien, die von allen Schüler:innen oder differenziert nach Niveaustufen genutzt werden können. Auf diese Weise können Lehrkräfte gezielte Lesefördermaßnahmen einsetzen und ein bedarfsgerechtes Lesetraining gestalten.
+
+Die browserbasierte Bereitstellung ermöglicht es, die Ergebnisse ohne zusätzliche Statistiksoftware aufzurufen und als Ausgangspunkt für die weitere Auseinandersetzung mit den Lernständen zu nutzen. Die Grundfunktionen der App werden durch Informationsboxen und Erklärvideos erläutert.
+
+Im Menü der App kann zusätzlich eine Tabelle mit Testergebnissen angezeigt werden, die über Filterfunktionen verfügt. Darüber hinaus werden auf Grundlage der Testergebnisse Zeugnissätze bereitgestellt. 
+
+### Darstellung und Interpretation der Ergebnisse
+
+Ein wesentliches Merkmal der Rückmeldung ist die zeitliche Verknüpfung der Ergebnisse. Werden die Resultate der drei Messzeitpunkte gemeinsam betrachtet, lassen sich unterschiedliche Entwicklungsverläufe voneinander unterscheiden. Dazu gehören beispielsweise steigende, weitgehend stabile oder rückläufige Ergebnisse. Darüber hinaus kann sichtbar werden, ob Veränderungen bereits zwischen den ersten beiden Messzeitpunkten auftreten, sich erst im weiteren Verlauf zeigen oder ob sich ein anfänglicher Entwicklungsverlauf später fortsetzt beziehungsweise verändert.
+
+Die gemeinsame Betrachtung der drei Erhebungen ermöglicht somit eine differenziertere Interpretation, als sie anhand einzelner Testergebnisse möglich wäre. Insbesondere der Vergleich aufeinanderfolgender Messzeitpunkte kann Hinweise darauf geben, in welchen Zeiträumen Veränderungen auftreten. Die Betrachtung des gesamten Verlaufs erlaubt darüber hinaus, längerfristige Entwicklungstendenzen zu erkennen und zwischen kurzfristigen Schwankungen und über mehrere Messzeitpunkte hinweg stabilen Mustern zu unterscheiden.
+
+### Pädagogischer Nutzen und Nutzungsmöglichkeiten
+
+Der Mehrwert der digitalen Rückmeldung liegt insbesondere darin, dass Lernstandserhebungen nicht ausschließlich als punktuelle Bestandsaufnahme verstanden werden, sondern als Informationsgrundlage für die Beobachtung und Reflexion von Lernentwicklungen dienen können. Die Ergebnisse bieten Lehrkräften Anhaltspunkte dafür, welche Kompetenzbereiche einer vertieften Betrachtung bedürfen und bei welchen Lernenden beziehungsweise Teilgruppen sich ein besonderer Unterstützungsbedarf abzeichnen könnte.
+
+Die Gegenüberstellung mehrerer Messzeitpunkte eröffnet zugleich die Möglichkeit, die Entwicklung der Lerngruppe mit dem vorausgegangenen Unterricht und den zwischenzeitlich erfolgten Lerngelegenheiten in Beziehung zu setzen. Lehrkräfte können auf dieser Grundlage Hypothesen darüber entwickeln, welche Lerninhalte weiter vertieft werden sollten, wo zusätzliche Übungs- und Förderangebote sinnvoll erscheinen und welche Aspekte des Unterrichts bei der weiteren Planung berücksichtigt werden sollten. Die Rückmeldung stellt damit eine Grundlage für pädagogische Entscheidungen dar, ersetzt jedoch nicht die fachliche Interpretation durch die Lehrkraft.
+
+Bei der Interpretation ist zu berücksichtigen, dass beobachtete Veränderungen nicht automatisch auf bestimmte Unterrichtsmaßnahmen zurückgeführt werden können. Lernentwicklungen werden von unterschiedlichen individuellen und kontextuellen Faktoren beeinflusst. Die Daten liefern daher zunächst Hinweise auf Veränderungen und mögliche Entwicklungsbedarfe. Die Erklärung ihrer Ursachen erfordert zusätzliche Informationen und eine Einordnung in den jeweiligen Unterrichts- und Lernkontext.
+
+### Adressat:innen der Rückmeldung
+
+#### Lehrkräfte
+
+Die primäre Zielgruppe der Anwendung sind Lehrkräfte, die Lernstandserhebungen durchführen und deren Ergebnisse für die weitere Gestaltung des Unterrichts nutzen möchten. Für sie bietet die digitale Rückmeldung eine strukturierte Grundlage, um Lernstände über mehrere Zeitpunkte hinweg nachzuvollziehen, Entwicklungsverläufe zu reflektieren und mögliche Schwerpunkte für die individuelle Förderung sowie die Weiterentwicklung des Unterrichts zu identifizieren.
+
+Darüber hinaus können die aufbereiteten Informationen als Gesprächsgrundlage für den fachlichen Austausch innerhalb von Jahrgangs- und Fachschaften dienen. Wenn Ergebnisse gemeinsam betrachtet werden, lassen sich Beobachtungen bündeln, unterschiedliche Interpretationen diskutieren und mögliche Konsequenzen für die Unterrichtsgestaltung abstimmen.
+
+#### Schüler:innen und Eltern
+
+Die Rückmeldung für Schüler:innen wurde mit Blick auf die spezifischen Bedürfnisse und Voraussetzungen von Kindern im Grundschulalter gesondert konzipiert. Im Mittelpunkt stehen eine adressatengerechte, verständliche und motivierende Darstellung der individuellen Lernergebnisse sowie die Unterstützung der weiteren Lernentwicklung. Die Schüler:innenansicht ist über die grafische Benutzeroberfläche erreichbar: Durch einen Klick auf den jeweiligen Vogel und die anschließende Auswahl des Kopf-Icons gelangen die Nutzer:innen zur individuellen Rückmeldeseite.
+
+Die Rückmeldeseite stellt den persönlichen Lernverlauf über die drei Messzeitpunkte hinweg dar. Ziel ist es, den Kindern ihre Lernentwicklung auf anschauliche und positive Weise zugänglich zu machen und Veränderungen ihrer Leistungen nachvollziehbar zu visualisieren. Die Rückmeldung soll dabei nicht allein die erreichten Ergebnisse sichtbar machen, sondern auch zur Auseinandersetzung mit dem eigenen Lernfortschritt anregen. Ergänzend werden den jeweiligen Ergebnissen passende Fördermaterialien zugeordnet, die Anknüpfungspunkte für die individuelle Weiterarbeit bieten und die Kinder dabei unterstützen sollen, ihre Kompetenzen gezielt weiterzuentwickeln.
+
+Zur Unterstützung der selbstständigen Nutzung ist eine Vorlesefunktion vorgesehen. In der aktuellen Prototypenversion ist diese Funktion noch nicht vollständig implementiert und wird durch einen Platzhalter repräsentiert. Damit ist die Möglichkeit einer auditiven Vermittlung der Rückmeldungsinhalte bereits konzeptionell berücksichtigt, ohne dass die Vorlesefunktion im Prototypen als einsatzbereit vorausgesetzt werden kann.
+
+Ein weiteres Gestaltungselement ist die Möglichkeit, die Farben des eigenen Vogels individuell anzupassen. Diese Personalisierungsoption fungiert als spielerisches Gamification-Element und eröffnet den Kindern eine einfache Möglichkeit, die Rückmeldungsumgebung aktiv mitzugestalten. Dadurch soll die Identifikation mit der eigenen Darstellung gestärkt und eine positive, kindgerechte Nutzungserfahrung unterstützt werden.
+
+Die Schüler:innenrückmeldung richtet sich unmittelbar an die Kinder und kann zugleich als Grundlage für Gespräche zwischen Kindern, Eltern und Lehrkräften dienen. Eltern können die dargestellten Lernverläufe und die bereitgestellten Fördermaterialien nutzen, um die Lernentwicklung ihres Kindes nachzuvollziehen und die weitere Auseinandersetzung mit den Lerninhalten zu begleiten. Die Rückmeldung ist somit nicht nur als Darstellung von Testergebnissen angelegt, sondern als niedrigschwelliger Zugang zu individuellen Lernentwicklungen und möglichen nächsten Lernschritten.
+
+### Einordnung als Entwicklungsprototyp
+
+Die Anwendung ist als Prototyp im Zusammenhang mit der Weiterentwicklung digitaler Rückmeldungen zu Lernstandserhebungen zu verstehen. Die Zusammenführung von drei Messzeitpunkten erweitert die Perspektive herkömmlicher Ergebnisberichte um eine explizite Betrachtung zeitlicher Veränderungen. Die zentrale Herausforderung besteht darin, die zusätzlichen Informationen so aufzubereiten, dass die Nutzer:innen relevante Muster erkennen können, ohne durch eine übermäßige Komplexität der Darstellung überfordert zu werden. Die Qualität der Rückmeldung bemisst sich deshalb nicht allein an der Vollständigkeit der dargestellten Daten, sondern insbesondere daran, ob die Visualisierung eine sachgerechte Interpretation unterstützt und den Übergang von der Ergebnisbetrachtung zu konkreten pädagogischen Überlegungen erleichtert.
+Insgesamt verfolgt die Anwendung das Ziel, die Rückmeldung von Lernstandserhebungen stärker entwicklungsorientiert auszurichten. Sie soll dazu beitragen, Ergebnisse über mehrere Messzeitpunkte hinweg verständlich zugänglich zu machen und als Ausgangspunkt für eine datengestützte Reflexion von Lernprozessen zu nutzen. Der entscheidende Mehrwert liegt in der Verbindung von diagnostischer Information und zeitlicher Perspektive: Nicht nur der erreichte Lernstand, sondern auch dessen Veränderung wird zum Gegenstand der pädagogischen Betrachtung. 
+
 ## Lizenz
 
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
